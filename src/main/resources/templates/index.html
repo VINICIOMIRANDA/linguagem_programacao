@@ -29,9 +29,10 @@
 
 <ul th:if="${historico}" >
  
-    <li th:each="item : ${historico}" th:text="${item.nome}"></li>
-    <li th:each="item : ${historico}" th:text="${item.idade}"></li>
-    <li th:each="item : ${historico}" th:text="${item.email}"></li>
+    <li th:each="item : ${historico}">
+        Nome:<span th:text="${item.nome} "></span>;
+        Idade:<span  th:text="${item.idade}"></span>;
+        E-mail:<span th:text="${item.email} "></span></li>
 
 </ul>
 
